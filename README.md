@@ -11,17 +11,16 @@ This repo is a Docker image of [nginx-http-flv-module](https://github.com/winshi
 Pull Docker image:
 
 ```shell
-docker pull mugennsou/nginx-http-flv
+docker pull zypy333/http-flv
 ```
 
-Note: you can pull the `mugennsou/nginx-http-flv:dev` tag to experience the latest (in developing) nginx-http-module.
 
 ## Usage
 
 Start nginx-http-flv server:
 
 ```shell
-docker run --rm -it -p 80:80 -p 1935:1935 mugennsou/nginx-http-flv
+docker run --rm -it -p 80:80 -p 1935:1935 zypy333/http-flv
 ```
 
 Push RTMP stream to nginx-http-flv server:

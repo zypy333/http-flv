@@ -5,22 +5,23 @@
 本项目为基于 [nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module) 制作的 Docker 镜像。
 内含整合 [flv.js](https://github.com/bilibili/flv.js) 的 demo。
 
+因为原作者 mugennsou 没再更新,我自己fork了并同步一个仓库,修复了hls的404问题,升级了nginx-http-flv-module及nginx版本
+
 ## 安装
 
 使用 Docker 拉取镜像：
 
 ```shell
-docker pull mugennsou/nginx-http-flv
+docker pull zypy333/http-flv
 ```
 
-注: 你可以拉取 `mugennsou/nginx-http-flv:dev` tag 以使用最新版本（不稳定，但包含原作者所有修改）的 http-flv-modlue。
-
+ 
 ## 使用
 
 启动 nginx-http-flv 服务器：
 
 ```shell
-docker run --rm -it -p 80:80 -p 1935:1935 mugennsou/nginx-http-flv
+docker run --rm -it -p 80:80 -p 1935:1935 zypy333/http-flv
 ```
 
 使用 ffmpeg 向 nginx-http-flv 的 RTMP 服务器推流：
